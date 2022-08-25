@@ -13,7 +13,8 @@ public class Read {
 		cfg.addAnnotatedClass(Car.class);
 		SessionFactory sf = cfg.buildSessionFactory();
 		Session s = sf.openSession();
-		Car c = s.load(Car.class, 6);
+		
+		Car c = s.load(Car.class, 1);
 		System.out.println(c);
 		s.close();
 	}
